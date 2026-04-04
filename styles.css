@@ -1,6 +1,15 @@
+@font-face {
+    font-family: header-font;
+    src: url('starter/assets/fonts/young-serif/YoungSerif-Regular.ttf');  
+}
+
 body {
    background-color: hsl(30, 54%, 90%);
 }
+
+/*
+    TODO: fix border radis of page. should be cut for body
+*/
 
 .container {
     display: flex;
@@ -11,5 +20,15 @@ body {
     img {
         padding: 2em 2em 1em 2em;
         border-radius: 2.4rem;
+    }
+    h1 {
+        font-family: 'header-font';
+        color: hsl(30, 10%, 34%);
+        font-weight: normal;
+        letter-spacing: 0.02em;
+    }
+    .information {
+        width: 90%;
+        margin: 0 auto;
     }
 }
