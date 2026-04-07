@@ -1,15 +1,11 @@
 @font-face {
     font-family: header-font;
-    src: url('starter/assets/fonts/young-serif/YoungSerif-Regular.ttf');  
+    src: url('starter/assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
 body {
-   background-color: hsl(30, 54%, 90%);
+    background-color: hsl(30, 54%, 90%);
 }
-
-/*
-    TODO: fix border radis of page. should be cut for body
-*/
 
 .container {
     display: flex;
@@ -17,18 +13,44 @@ body {
     width: 40%;
     margin: 0 auto;
     background-color: white;
+    border-radius: 1.2rem;
+
     img {
         padding: 2em 2em 1em 2em;
-        border-radius: 2.4rem;
+        border-radius: 2.8rem;
     }
+
     h1 {
         font-family: 'header-font';
-        color: hsl(30, 10%, 34%);
         font-weight: normal;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
+    }
+
+    p {
+        color: hsl(30, 10%, 34%);
     }
     .information {
-        width: 90%;
-        margin: 0 auto;
+        margin: 0 2em 1em 2em;
+
+        .action-items {
+            font-weight: bold
+        }
+
+        .prep-time {
+            background-color: hsl(330, 100%, 98%);
+            border-radius: 1.0rem;
+            padding: 0.6em 0 1em 1.2em;
+            margin: 2em 0 0 0;
+            h2 {
+                color: hsl(332, 51%, 32%);
+            }
+            ul {
+                padding-left: inherit;
+            }
+            li {
+                margin-bottom: 1em;
+                padding-left: 1em;
+            }
+        }
     }
 }
