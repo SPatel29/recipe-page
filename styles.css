@@ -3,6 +3,21 @@
     src: url('starter/assets/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
+@font-face {
+    font-family: action-items-font;
+    src: url('starter/assets/fonts/outfit/static/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: regular;
+    src: url('starter/assets/fonts/outfit/static/Outfit-Regular.ttf')
+}
+
+@font-face {
+    font-family: semi-bold;
+    src: url('starter/assets/fonts/outfit/static/Outfit-SemiBold.ttf')
+}
+
 body {
     background-color: hsl(30, 54%, 90%);
 }
@@ -10,7 +25,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
     background-color: white;
     border-radius: 1.2rem;
@@ -29,27 +44,40 @@ body {
     p {
         color: hsl(30, 10%, 34%);
     }
+
     .information {
         margin: 0 2em 1em 2em;
-
-        .action-items {
-            font-weight: bold
-        }
 
         .prep-time {
             background-color: hsl(330, 100%, 98%);
             border-radius: 1.0rem;
             padding: 0.6em 0 1em 1.2em;
             margin: 2em 0 0 0;
+            color: hsl(30, 10%, 34%);
+
+            .action-items {
+                font-family: action-items-font;
+            }
+
             h2 {
                 color: hsl(332, 51%, 32%);
+                font-family: semi-bold;
+                font-weight: unset;
+
             }
+
             ul {
-                padding-left: inherit;
+                padding-left: 1.5em;
             }
+
             li {
                 margin-bottom: 1em;
-                padding-left: 1em;
+                padding-left: 1.2em;
+                font-family: regular;
+            }
+
+            li::marker {
+                color:hsl(332, 51%, 32%);
             }
         }
     }
