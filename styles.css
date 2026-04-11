@@ -46,6 +46,14 @@ body {
         font-family: regular;
     }
 
+    hr {
+        border: 0.01em solid hsl(30, 18%, 87%);
+    }
+
+    .action-items {
+        font-family: action-items-font;
+    }
+
     .information {
         margin: 0 2em 1em 2em;
 
@@ -56,9 +64,7 @@ body {
             margin: 2em 0 0 0;
             color: hsl(30, 10%, 34%);
 
-            .action-items {
-                font-family: action-items-font;
-            }
+
 
             h2 {
                 color: hsl(332, 51%, 32%);
@@ -101,11 +107,37 @@ body {
             font-family: regular;
             margin-bottom: 0.5em;
             font-size: 0.85em;
-
         }
 
         li::marker {
             color: hsl(14, 45%, 36%);
+        }
+    }
+
+    .instructions {
+        h2 {
+            font-family: header-font;
+            color: hsl(14, 45%, 36%);
+            letter-spacing: 0.03em;
+            font-weight: unset;
+            margin-bottom: 0.65em;
+        }
+
+        ol {
+            padding: 0 0 1em 1.2em;
+        }
+
+        li {
+            padding: 0 0 0.8em 1em;
+            color: hsl(30, 10%, 34%);
+            font-family: regular;
+            margin-bottom: 0.5em;
+            font-size: 0.85em;
+        }
+
+        li::marker {
+            color: hsl(14, 45%, 36%);
+            font-family: semi-bold;
         }
     }
 }
