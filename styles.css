@@ -46,7 +46,8 @@ body {
         font-family: regular;
     }
 
-    hr {
+    hr,
+    tr {
         border: 0.01em solid hsl(30, 18%, 87%);
     }
 
@@ -99,6 +100,7 @@ body {
 
         ul {
             padding: 0 0 1em 1.2em;
+            margin-bottom: 0;
         }
 
         li {
@@ -125,6 +127,7 @@ body {
 
         ol {
             padding: 0 0 1em 1.2em;
+            margin-bottom: 0em;
         }
 
         li {
@@ -138,6 +141,51 @@ body {
         li::marker {
             color: hsl(14, 45%, 36%);
             font-family: semi-bold;
+        }
+    }
+
+    .nutrition {
+        h2 {
+            color: hsl(14, 45%, 36%);
+            font-family: header-font;
+        }
+
+        p {
+            margin: 1em 0 0.5em 0;
+            font-family: regular;
+        }
+
+        .nutrition-info {
+            display: flex;
+
+            table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+
+                th {
+                    padding: 0.8em 0 0.8em 1em;
+                    text-align: left;
+                    color: hsl(30, 10%, 34%);
+                    font-weight: unset;
+                }
+
+                td {
+                    padding: 0.8em 0 0.8em 1em;
+                    font-family: semi-bold;
+                    color: hsl(14, 45%, 36%);
+                }
+
+                tr {
+                    border-left: unset;
+                    border-right: unset;
+                    border-top: unset;
+                }
+
+                tr:last-child {
+                    border-bottom: unset;
+                }
+            }
         }
     }
 }
