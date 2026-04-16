@@ -82,6 +82,7 @@ body {
                 margin-bottom: 1em;
                 padding-left: 1.2em;
                 font-family: regular;
+                padding-right: 1em;;
             }
 
             li::marker {
@@ -104,6 +105,7 @@ body {
         }
 
         li {
+            padding: 0 0.2em 0 1em;
             padding-left: 1em;
             color: hsl(30, 10%, 34%);
             font-family: regular;
@@ -197,20 +199,20 @@ body {
 /* 2. Large devices / Small Laptops (max-width: 992px) */
 @media (max-width: 992px) {
     .container {
+        width: 60%;
     }
 }
 
 /* 3. Medium devices / Tablets (max-width: 768px) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-    }
-}
-
-/* 4. Small devices / Phones (max-width: 600px) */
-@media (max-width: 600px) {
-    .container {
         width: 100%;
-        padding: 10px;
+        margin: unset;
+        border-radius: unset;
+        img {
+            width: inherit;
+            padding: unset;
+            border-radius: unset;
+        }
     }
 }
